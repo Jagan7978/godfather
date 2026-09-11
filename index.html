@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE GODFATHER™</title>
+    <!-- Font Awesome Icons ke liye -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #111d28 0%, #080d12 100%);
+            background-color: #080d12;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        .card {
+            background-color: #121920;
+            border: 1px solid #1e2936;
+            border-radius: 24px;
+            padding: 35px 20px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .title {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .yellow-box {
+            background-color: #e2e600;
+            color: #000000;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 14px 15px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        .timer-text {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #d0d0d0;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .timer-text span {
+            color: #00ff66;
+            font-weight: 700;
+        }
+
+        .join-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(180deg, #941f00 0%, #6e1500 100%);
+            background-color: #801800;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 800;
+            padding: 18px 20px;
+            border-radius: 18px;
+            border: 2px solid #52ffb8;
+            box-shadow: 0 0 15px rgba(82, 255, 184, 0.4);
+            margin-bottom: 30px;
+            transition: transform 0.2s;
+        }
+
+        .join-btn:active {
+            transform: scale(0.98);
+        }
+
+        .telegram-icon {
+            background-color: #ffffff;
+            color: #801800;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .disclaimer {
+            font-size: 11px;
+            color: #6a7888;
+            line-height: 1.5;
+            border-top: 1px dashed #222f3e;
+            padding-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .footer-ads {
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .footer-ads span {
+            color: #2b78e4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1 class="title">THE GODFATHER™</h1>
+
+        <div class="yellow-box">
+            Accurate analysis • Match Update • Right Pred!ction
+        </div>
+
+        <div class="timer-text">
+            FREE JOINING ENDS IN <span id="timer">2s</span>
+        </div>
+
+        <a href="https://t.me/+CY6S_x9Hr74yMDM1" class="join-btn">
+            <span>JOIN TELEGRAM FOR NEW UPDATE</span>
+            <div class="telegram-icon">
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
+        </a>
+
+        <p class="disclaimer">
+            Disclaimer: This channel shares cricket updates, analysis, and general information for fans. It does not promote betting or gambling. No outcomes are guaranteed. Please verify independently and act responsibly.
+        </p>
+
+        <div class="footer-ads">
+            Ads by <span>Rockbhai Ads Agency</span>
+        </div>
+    </div>
+
+    <script>
+        // Reverse Timer Script (Optional - Timer Functionality)
+        let seconds = 2;
+        const timerElement = document.getElementById('timer');
+        
+        const countdown = setInterval(() => {
+            if (seconds > 0) {
+                seconds--;
+                timerElement.textContent = seconds + 's';
+            } else {
+                clearInterval(countdown);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
